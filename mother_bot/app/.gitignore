@@ -1,0 +1,10 @@
+# Bulid files
+/build
+
+# Library
+/libs
+
+# Test files
+/src/androidTest
+/src/test
+/src/main/res/values/strings.xml

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@color/com_kakao_brown"
+    tools:context="android.inseop.com.mother_bot.MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/com_kakao_brown">
+
+        <RelativeLayout
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/com_kakao_brown">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/message_sharing"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="motherS2haring"
+                android:fontFamily="@font/asiahead4"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/subject"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/line"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:hint="이름"
+            android:fontFamily="@font/hoonsaemaulundongr"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked = "true"
+                android:text="MMS 사진"
+                android:fontFamily="@font/hoonsaemaulundongr"/>
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MMS 메시지"
+                android:fontFamily="@font/hoonsaemaulundongr"/>
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS 메시지"
+                android:fontFamily="@font/hoonsaemaulundongr"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/phone_number"
+            android:layout_alignBottom="@+id/phone_number"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/phone_book"/>
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:layout_above="@+id/radioGroup1"
+            android:textAlignment="center"
+            android:ems="7"
+            android:hint="전화번호\n(-)없이 입력"
+            android:inputType="phone"
+            android:fontFamily="@font/hoonsaemaulundongr"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/phone_number"
+            android:layout_alignBottom="@+id/phone_number"
+            android:text="확인"
+            android:fontFamily="@font/hoonsaemaulundongr"/>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

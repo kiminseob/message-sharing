@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_kakao_brown">
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/hoonsaemaulundongr"/>
+    <TextView
+        android:id="@+id/image_down_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_number"
+        android:textSize="18sp"
+        android:textColor="@color/com_kakao_button_background_press"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/hoonsaemaulundongr"/>
+    <Button
+        android:id="@+id/down_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_button"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:text="이미지다운"
+        android:fontFamily="@font/hoonsaemaulundongr"/>
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:text="카카오톡 공유하기"
+        android:fontFamily="@font/hoonsaemaulundongr"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/down_button"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="1dp"
+        android:divider="@color/white"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.inseop.com.mother_bot.custom_layout.CheckableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/customView"
+    android:descendantFocusability="blocksDescendants">
+
+
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메시지"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textColor="#33aabb"
+            android:fontFamily="@font/hoonsaemaulundongr" />
+
+       <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/checkBox1"  />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/checkBox1"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_weight="1" />
+
+</android.inseop.com.mother_bot.custom_layout.CheckableLayout>
